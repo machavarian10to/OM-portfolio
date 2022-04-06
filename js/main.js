@@ -57,7 +57,7 @@ ScrollReveal({
  });
  
 
-ScrollReveal().reveal('.skills h3', { delay: 100, origin: 'top'}); 
-ScrollReveal().reveal('.home-container .home-img, .about h3, .about h4', { delay: 100, origin: 'right'}); 
-ScrollReveal().reveal('.home-info .home-btns, .skills .languages', { delay: 100, origin: 'bottom'}); 
-ScrollReveal().reveal('.home .home-info h2,  .home-info p, .about .video, .projects .projects-container .project-card, .footer-container .info-follow h4', { delay: 100, origin: 'left'}); 
+ScrollReveal().reveal('.skills h3, .home-container .home-img, .about h3, .about h4', { delay: 100, origin: 'top'}); 
+// ScrollReveal().reveal('.home-container .home-img, .about h3, .about h4', { delay: 100, origin: 'right'}); 
+ScrollReveal().reveal('.home-info .home-btns, .skills .languages, .home .home-info h2,  .home-info p, .about .video, .projects .projects-container .project-card, .footer-container .info-follow h4', { delay: 100, origin: 'bottom'}); 
+// ScrollReveal().reveal('.home .home-info h2,  .home-info p, .about .video, .projects .projects-container .project-card, .footer-container .info-follow h4', { delay: 100, origin: 'left'}); 
