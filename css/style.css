@@ -581,7 +581,7 @@ footer a {
 /* RESPONSIVE */
 @media (max-width: 1070px){
     .navigation {
-        display: none;
+        /* display: none; */
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -627,6 +627,7 @@ footer a {
 
     .nav-menu-btn {
         display: block;
+        padding-left: 10%;
     }
 
     .nav-menu-btn i{
@@ -704,7 +705,7 @@ footer a {
     }
     
     .about span {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .video{
@@ -864,7 +865,6 @@ footer a {
         content: '';
         display: none;
     }
-    
 
     /* skills */
     .skills .languages{
@@ -896,11 +896,35 @@ footer a {
 
 @media (max-width: 400px) {
 
+    .home{
+        margin-top: 70px;
+    }
+
     .home .home-info{
         padding: 2px;
     }
 
+    .home .home-info h3{
+        line-height: 1.3;
+    }
+
+    .home-container .home-img{
+        width: 100%;
+    }
+
+    .home-container .home-btns a{
+        padding: 23px;
+    }
+
     .nav-bar .nav-close-btn i{
+        font-size: 15px;
+    }
+
+    .nav-items{
+        padding: 20px;
+    }
+
+    .nav-items a {
         font-size: 15px;
     }
 
@@ -908,16 +932,22 @@ footer a {
         font-size: 12px;
     }
 
+    .about span {
+        font-size: 11px;
+    }
+
     .skills .languages, .skills .tools{
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .footer-container .about h2{
+        font-size: 20px;
+    }
+
+    .footer-copyright p{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    
 }
-
-
-
-
-
-
-
-
-
