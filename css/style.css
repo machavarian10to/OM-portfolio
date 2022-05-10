@@ -120,7 +120,7 @@ h3{
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--main-color);
     animation: loader-inner 2s infinite ease-in;
 }
   
