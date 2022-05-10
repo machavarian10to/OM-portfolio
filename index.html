@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="icon" href="./images/OM.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfolio</title>
 </head>
-<body>
+<body class="preload">
+    <div class="loader-wrapper">
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
+
+    <script>
+        $(window).on("load", function(){
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").removeClass("preload");
+        });
+    </script>
 
     <div class="scrollToTop-btn flex-center">
         <i class="fas fa-arrow-up"></i>
     </div>
 
+    <!-- NAVIGATION -->
     <header>
         <div class="nav-bar">
 
@@ -103,14 +117,14 @@
                 <i class="fa-brands fa-html5"></i>
                 <i class="fa-brands fa-css3"></i>
                 <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-bootstrap"></i>
                 <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-bootstrap"></i>
                 <i class="devicon-jquery-plain-wordmark"></i>
-                <i class="devicon-tailwindcss-plain"></i>
                 <i class="fa-brands fa-react"></i>
                 <i class="devicon-redux-original"></i>
                 <i class="fa-brands fa-python"></i>
                 <i class="devicon-flask-original"></i>
+                <i class="devicon-tailwindcss-plain"></i>
                 <i class="devicon-oracle-original"></i>
             </div>
 
@@ -139,26 +153,26 @@
                         <i class="fa-solid fa-folder"></i>
                     </div>
                     <div class="links">
-                        <a href="https://github.com/machavarian10to/web3.0-blockchain-app" target="_blank">
+                        <a href="https://github.com/machavarian10to/crypto-app" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://web3-0-blockchain-app-sepia.vercel.app/" target="_blank">
+                        <a href="https://machavarian10to.github.io/crypto-app/" target="_blank">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
                 <div class="project-body">
-                    <h4>Web3.0 App</h4>
+                    <h4>Crypto App</h4>
                     <p>
-                        React application that connects to Ethereum wallet using Metamask and 
-                        allow users to send crypto through blockchain via test network Ropsten.
+                        Cryptocurrency prices tracker using API from coingecko.
+                        program has filter by name or filter by price functional.
                     </p>
                 </div>
                 <div class="project-footer">
                     <ul>
                         <li>React.js</li>
-                        <li>Solidity</li>
-                        <li>Tailwind Css</li>
+                        <li>Axios</li>
+                        <li>API</li>
                     </ul>
                 </div>
             </div>
@@ -208,8 +222,8 @@
                 </div>
                 <div class="project-body">
                     <h4>BEFIT</h4>
-                    <p>Simple landing page about fitness. Page is built by using only markup, bootstrap 
-                        classes, css preprocessor sass and vanilla javascript for hamburger menu.
+                    <p>Simple landing page about fitness. Page is built by using only html, bootstrap, 
+                        css preprocessor sass and hamburger menu is made by vanilla javascript.
                     </p>
                 </div>
                 <div class="project-footer">
