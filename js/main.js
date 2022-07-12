@@ -9,6 +9,7 @@ scrollTopBtn.addEventListener('click', () => {
     document.documentElement.scrollTop = 0;
 })
 
+// mark active sections in navbar
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     const scrollY = window.pageYOffset;
@@ -26,6 +27,7 @@ window.addEventListener('scroll', () => {
     })
 })
 
+// burger menu
 const menuBtn = document.querySelector('.nav-menu-btn');
 const closeBtn = document.querySelector('.nav-close-btn');
 const navigation = document.querySelector('.navigation');
@@ -49,6 +51,8 @@ navItem.forEach(link => {
     })
 })
 
+
+// scroll animation
 ScrollReveal({ 
     reset: true,
     distance: '60px',
@@ -57,7 +61,5 @@ ScrollReveal({
  });
  
 
-ScrollReveal().reveal('.skills h3, .home-container .home-img, .about h3, .about h4', { delay: 100, origin: 'top'}); 
-// ScrollReveal().reveal('.home-container .home-img, .about h3, .about h4', { delay: 100, origin: 'right'}); 
-ScrollReveal().reveal('.home-info .home-btns, .skills .languages, .home .home-info h2,  .home-info p, .about .video, .projects .projects-container .project-card, .footer-container .info-follow h4', { delay: 100, origin: 'bottom'}); 
-// ScrollReveal().reveal('.home .home-info h2,  .home-info p, .about .video, .projects .projects-container .project-card, .footer-container .info-follow h4', { delay: 100, origin: 'left'}); 
+ScrollReveal().reveal('.home-container .home-img, .about h3, .about h4, .skills .languages, .skills .tools', { delay: 100, origin: 'top'}); 
+ScrollReveal().reveal('.home-info .home-btns, .home .home-info h2,  .home-info p, .about .video, .projects .projects-container .project-card, .footer-container .info-follow h4', { delay: 100, origin: 'bottom'}); 
