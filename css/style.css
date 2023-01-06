@@ -453,6 +453,7 @@ header .nav-bar {
 
 .skills .languages {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 5px;
 }
@@ -635,6 +636,9 @@ footer a {
 
 
 /* RESPONSIVE */
+@media (max-width: 1920px){
+
+}
 @media (max-width: 1070px){
     .navigation {
         /* display: none; */
