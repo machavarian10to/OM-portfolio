@@ -12,20 +12,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>O.M</title>
 </head>
-<body class="preload">
-    <!-- <div class="loader-wrapper">
-        <span class="loader">
-            <span class="loader-inner"></span>
-        </span>
-    </div> -->
-
-    <script>
-        $(window).on("load", function(){
-            $(".loader-wrapper").fadeOut("slow");
-            $("body").removeClass("preload");
-        });
-    </script>
-
+<body>
+    <!-- Scroll Top -->
     <div class="scrollToTop-btn flex-center">
         <i class="fas fa-arrow-up"></i>
     </div>
@@ -47,6 +35,7 @@
                     <a href="#About">About</a>
                     <a href="#Skills">Skills</a>
                     <a href="#Projects">Projects</a>
+                    <a href="#Experience">Experience</a>
                     <a href="#Contact">Contact</a>
                 </div>
             </div>
@@ -100,7 +89,7 @@
                 <p>
                     I am a self-motivated and self-driven person who is always looking
                     for new challenges and opportunities to improve knowledge and skills. 
-                    I have been coding <span>over 2 years</span> and enjoying every part of my journey.
+                    I have been coding <span>over 3 years</span> and enjoying every part of my journey.
                     Last year I discovered and dived in a new world called <span>Blockchain Technologies</span>.
                     Since then trying to learn everything interesting and valuable about
                     it.
@@ -117,13 +106,13 @@
                 <i class="fa-brands fa-html5" title="HTML5"></i>
                 <i class="fa-brands fa-css3" title="CSS3"></i>
                 <i class="fa-brands fa-js" title="JavaScript"></i>
-                <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
-                <i class="fa-brands fa-sass" title="Sass"></i>
-                <i class="fa-brands fa-laravel" title="Laravel"></i>
-                <i class="fa-brands fa-vuejs" title="Vue"></i>
+                <i class="devicon-typescript-plain" title="Typescript"></i>
                 <i class="fa-brands fa-react" title="React"></i>
+                <i class="fa-brands fa-angular" title="Angular"></i>
+                <i class="fa-brands fa-vuejs" title="Vue"></i>
+                <i class="fa-brands fa-laravel" title="Laravel"></i>
                 <i class="fa-brands fa-python" title="Python"></i>
-                <i class="devicon-flask-original" title="Flask"></i>
+                <i class="fa-brands fa-sass" title="Sass"></i>
                 <i class="devicon-tailwindcss-plain" title="Tailwind"></i>
                 <i class="devicon-mysql-plain" title="mysql"></i>
             </div>
@@ -131,7 +120,6 @@
         <div>
             <h4>Developer Tools</h4>
             <div class="tools">
-                <!-- <i class="devicon-docker-plain" title="Docker"></i> -->
                 <i class="fa-brands fa-git-alt" title="Git"></i>
                 <i class="devicon-bash-plain" title="Bash"></i>
                 <i class="fa-brands fa-linux" title="Linux"></i>
@@ -153,26 +141,56 @@
                         <i class="fa-solid fa-folder"></i>
                     </div>
                     <div class="links">
-                        <a href="https://github.com/machavarian10to/crypto-app" target="_blank">
+                        <a href="https://github.com/machavarian10to/quizzical-app" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://crypto-app-machavarian10to.vercel.app/" target="_blank">
+                        <a href="https://quizzical-app-eta.vercel.app/" target="_blank">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
                 <div class="project-body">
-                    <h4>Crypto App</h4>
+                    <h4>Quizzical</h4>
                     <p>
-                        Cryptocurrency prices tracker using API from coingecko.
-                        Program has filter by name and filter by price functional.
-                        <br /> (not-responsive)
+                        Scrimba React course final assignment - quiz app with five random questions. 
+                        If user answers all questions correctly confetti animation will appear. 
                     </p>
                 </div>
                 <div class="project-footer">
                     <ul>
-                        <li>React.js</li>
-                        <li>Axios</li>
+                        <li>React</li>
+                        <li>API</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="folder" >
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/machavarian10to/google-jobs" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://google-jobs-ruby.vercel.app/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h4>Job Search</h4>
+                    <p>App helps users to search jobs. To use this app, you need to activate the CORS 
+                        to handle CORS header. To do this, click the button located 
+                        <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">
+                            HERE.
+                        </a>
+                    </p>
+                </div>
+                <div class="project-footer">
+                    <ul>
+                        <li>Angular</li>
+                        <li>Angular Material</li>
                         <li>API</li>
                     </ul>
                 </div>
@@ -206,8 +224,39 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="project-card">
+            
+            <div class="project-card hidden">
+                <div class="project-header">
+                    <div class="folder">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/machavarian10to/crypto-app" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://crypto-app-machavarian10to.vercel.app/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h4>Crypto App</h4>
+                    <p>
+                        Cryptocurrency prices tracker using API from coingecko.
+                        Program has filter by name and filter by price functional.
+                        <br /> (not-responsive)
+                    </p>
+                </div>
+                <div class="project-footer">
+                    <ul>
+                        <li>React.js</li>
+                        <li>Axios</li>
+                        <li>API</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="project-card hidden">
                 <div class="project-header">
                     <div class="folder" >
                         <i class="fa-solid fa-folder"></i>
@@ -237,8 +286,63 @@
             </div>
         </div>
 
+        <div class="show-projects">
+            <button id="show-more-btn" class="btn-showmore">show more</button>
+        </div>
     </section>
 
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="Experience">
+        <h3>Experience</h3>
+
+        <div class="experience-container">
+            <div class="job-container">
+                <div class="job-content">
+                    <h2>Junior Fullstack Developer</h2>
+    
+                    <div class="job-desc">
+                        <div class="job-details">
+                            <a href="" target="_blank">Company - Date</a>
+                        </div>
+                        
+                        <div class="suitcase flex-center">
+                            <i class="fa-solid fa-suitcase"></i>
+                        </div>
+                    </div>
+                    
+                    <p>
+                        loading...
+                    </p>
+                </div>
+            </div>
+
+            <div class="job-container">
+                <div class="job-content">
+                    <h2>Fullstack Developer Intern</h2>
+    
+                    <div class="job-desc odd">
+                        <div class="job-details odd">
+                            <a href="https://redberry.international/" target="_blank">
+                                <img src="./images/redberrylogo.svg" />
+                            </a>
+                            <p>&nbsp; - Aug 2022 - Jan 2023</p>
+                        </div>
+
+                        <div class="suitcase flex-center odd">
+                            <i class="fa-solid fa-suitcase"></i>
+                        </div>
+                    </div>
+                    
+                    <p>
+                        During the bootcamp I learned the fundamentals of back-end, 
+                        front-end and server infrastructure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- FOOTER -->
     <footer id ='Contact'>
@@ -275,11 +379,10 @@
             </div>
         </div>
         <div class="footer-copyright">
-            <p>&copy; 2022 All rights reserved.</p>
+            <p>&copy; 2023 All rights reserved.</p>
         </div>
     </footer>
 
    <script src="./js/main.js"></script>
-
 </body>
 </html>

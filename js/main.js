@@ -1,4 +1,6 @@
 const scrollTopBtn = document.querySelector('.scrollToTop-btn');
+const showMoreBtn = document.getElementById('show-more-btn');
+const hiddenProjects = document.querySelectorAll('.project-card.hidden');
 
 window.addEventListener('scroll', function(){
     scrollTopBtn.classList.toggle('active', window.scrollY > 500)
@@ -52,6 +54,18 @@ navItem.forEach(link => {
 })
 
 
+// Show/Hide more projects
+let isExpanded = false;
+
+showMoreBtn.addEventListener('click', () => {
+  isExpanded = !isExpanded;
+  hiddenProjects.forEach(project => {
+    project.style.display = isExpanded ? 'block' : 'none';
+  })
+  showMoreBtn.textContent = isExpanded ? 'show less' : 'show more'
+});
+
+
 // scroll animation
 ScrollReveal({ 
     reset: true,
@@ -61,5 +75,5 @@ ScrollReveal({
  });
  
 
-ScrollReveal().reveal('.home-container .home-img, .about h3, .about h4, .skills .languages, .skills .tools', { delay: 100, origin: 'top'}); 
-ScrollReveal().reveal('.home-info .home-btns, .home .home-info h2,  .home-info p, .about .video, .projects .projects-container .project-card, .footer-container .info-follow h4', { delay: 100, origin: 'bottom'}); 
+ScrollReveal().reveal('.home-container .home-img, .about h3, .about h4, .projects .projects-container', { delay: 100, origin: 'top'}); 
+ScrollReveal().reveal('.home-info .home-btns, .home .home-info h2,  .home-info p, .about .video,.footer-container .info-follow h4,.skills .languages, .skills .tools, .experience-container .job-container', { delay: 100, origin: 'left'}); 
