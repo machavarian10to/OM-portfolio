@@ -356,8 +356,7 @@ header .nav-bar {
 
 /* SKILLS */
 .skills, .projects, .experience{
-    margin-top: 50px;
-    padding: 50px;
+    padding: 100px 50px;
 }
 
 
@@ -444,9 +443,9 @@ header .nav-bar {
 
 .projects .projects-container {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(3, 3fr);
     column-gap: 30px;
-    justify-items: center;
 }
 
 .projects-container .project-card{
@@ -613,11 +612,11 @@ header .nav-bar {
 }
 
 .experience::before {
-    top: 110px;
+    top: 160px;
     position: absolute;
     content: " ";
     width: 1px;
-    height: 750px;
+    height: 590px;
     background-color: var(--main-color);
     left: 50%;
 }
