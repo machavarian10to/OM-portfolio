@@ -69,13 +69,13 @@ showMoreBtn.addEventListener('click', () => {
 // scroll animation
 ScrollReveal({ 
     reset: true,
-    distance: '60px',
-    duration: 2500,
-    delay: 100
+    distance: '100px',
+    duration: 3000,
+    delay: 150
  });
  
 
-ScrollReveal().reveal('.home-container .home-img, .about h3, .about h4, .projects .projects-container', { delay: 100, origin: 'top'}); 
+ScrollReveal().reveal('.home-container .home-img, .about h3, .about h4, .projects-container', { delay: 100, origin: 'top'}); 
 ScrollReveal().reveal(
     '.home-info .home-btns, .home .home-info h2,  .home-info p, .about .video,.footer-container .info-follow h4,.skills .languages, .skills .tools, .experience-container', 
     { delay: 100, origin: 'left'}

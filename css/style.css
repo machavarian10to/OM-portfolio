@@ -616,7 +616,7 @@ header .nav-bar {
     position: absolute;
     content: " ";
     width: 1px;
-    height: 590px;
+    height: 770px;
     background-color: var(--main-color);
     left: 50%;
 }
@@ -659,7 +659,7 @@ header .nav-bar {
 }
 
 .experience .job-desc a img{
-    width: 80px;
+    width: 100px;
 }
 
 .experience .job-desc p{
@@ -686,7 +686,11 @@ header .nav-bar {
     color: var(--bg-color);
 }
 
-  
+#fiverr-logo{
+    width: 80px;
+    height: 20px;
+}
+    
 
 /* FOOTER */
 footer::before{
